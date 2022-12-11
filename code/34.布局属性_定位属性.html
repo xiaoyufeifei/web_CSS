@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位属性</title>
+</head>
+<body>
+    <h1>绝对定位</h1>
+    <span>蓝色的div位于正常文档流中，红色的div脱离了文档流</span>
+    <div style="width:100px;height:100px;border:3px solid blue;"></div>
+    <div style="position:absolute;top:50px;left:50px;width:100px;height:100px;border:3px solid red;"></div>
+    <span>这里应该被红色div覆盖</span>
+    <hr/>
+    <span>绿色div和紫色div都设置成绝对定位div</span>
+    <span>但紫色div的父元素是绿色div</span>
+    <span>所以紫色div计算相对位置是根据绿色div的原点计算的</span>
+    <div style="position:absolute;top:200px;left:100px;width:100px;height:100px;border:3px solid green;">
+      <div style="position:absolute;top:30px;left:30px;width:100px;height:100px;border:3px solid purple;"></div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h1>相对定位</h1>
+    <div style="border:3px solid red;width:100px;height:100px;"></div>
+    <div style="position:relative;top:30px;left:30px;border:3px solid blue;width:100px;height:100px;"></div>
+    <div style="border:3px solid red;width:100px;height:100px;"></div>
+    <br/>
+    <h1>设置目标对像的定位层级</h1>
+    <div style="background-color: red;width: 100px;height: 100px;"></div>
+    <div style="position: absolute;top: 50px;left: 50px;background-color: blue;width: 100px;height: 100px;"></div>
+    <div style="position: absolute;top: 100px;left: 100px;z-index:1;background-color: green;width: 100px;height: 100px;"></div>
+    <div style="position: absolute;top: 150px;left: 150px;background-color: purple;width: 100px;height: 100px;"></div>
+</body>
+</html>

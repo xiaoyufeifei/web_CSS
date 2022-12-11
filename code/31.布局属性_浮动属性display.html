@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动属性display</title>
+    <style>
+      span.inline_box{
+        border: solid 1px red;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+      }
+      div.inline{
+        display: inline;
+      }
+    </style>
+</head>
+<body>
+  <p id="hideinfo" style="display: none;">这条信息是隐藏的</p>
+  <button onclick="document.getElementById('hideinfo').style.display='';">显示</button>
+  <button onclick="document.getElementById('hideinfo').style.display='none';">隐藏</button>
+  <br/>
+  <p><span style="display: block;">科技兴则产业兴，</span>深化“科创中国”建设</p>
+  <div class="inline">
+    科技兴则产业兴，
+  </div>
+  <div class="inline">
+    深化“科创中国”建设
+  </div>
+  <br/>
+  <span class="inline_box">
+    HTML
+  </span>
+  <span class="inline_box">
+    CSS
+  </span>
+  <span class="inline_box">
+    JavaScript
+  </span>
+  <span class="inline_box">
+    Jquery
+  </span>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        a:link {
+            font-size: 20px;
+        }
+        a:hover {
+            color: red;
+        }
+        /* :hover {
+            color: red;
+        } */
+        a:active {
+            font-size: 30px;
+        }
+        input:focus {
+            background-color: yellow;
+        }
+        li:first-child{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.people.com.cn/" target="_blank">www.people.com.cn</a>
+    <br/>
+    <a href="http://www.people.com.cn/">www.people.com.cn</a>
+    <br/>
+    <a href="http://www.people.com.cn/">www.people.com.cn</a>
+    <br/>
+    <form action="login" method="post">
+        用户名：<input type="text" name="username" id="username" value=""/><br/>
+        密码：<input type="password" name="password" id="password" value=""/><br/>
+    </form>
+    <ul>
+        <li>京</li>
+        <li>津</li>
+        <li>冀</li>
+    </ul>
+    <ul>
+        <li>太平洋</li>
+        <li>大西洋</li>
+        <li>北冰洋</li>
+        <li>印度洋</li>
+    </ul>
+</body>
+</html>

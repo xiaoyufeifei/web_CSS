@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容属性</title>
+    <style>
+        h1:after{
+            content: "基础";
+        }
+        h2:before{
+            content: url('img/HTML5.png');
+        }
+        a:after{
+            content: attr(href);
+        }
+    </style>
+</head>
+<body>
+   <h1>HTML</h1>
+   <h2>HTML</h2>
+   <a href="http://www.people.com.cn/">HTML</a> 
+</body>
+</html>
